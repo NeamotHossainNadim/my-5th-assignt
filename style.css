@@ -190,3 +190,110 @@ header p {
   background: #00b050;
   color: white;
 }
+
+/* sidebar section */
+.sidebar {
+  width: 260px;
+  background: #f9fff9;
+  border-left: 2px solid #ddd;
+  padding: 20px;
+  border-radius: 12px;
+  height: fit-content;
+}
+
+.sidebar h3 {
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.history-item {
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.history-item small {
+  display: block;
+  margin-top: 3px;
+  color: gray;
+}
+
+.clear-btn {
+  margin-top: 10px;
+  background: #00A63E;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1124px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%; 
+    margin-top: 20px;
+    border-left: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-left {
+    margin-bottom: 10px;
+  }
+
+  .navbar-right {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .nav-btn {
+    flex: 1 1 auto;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 22px;
+  }
+
+  header p {
+    font-size: 12px;
+  }
+
+  .navbar-left span {
+    font-size: 14px;
+  }
+
+  .nav-btn {
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+
+  .card-title {
+    font-size: 16px;
+  }
+
+  .number {
+    font-size: 20px;
+  }
+
+  .badge {
+    font-size: 11px;
+    padding: 3px 8px;
+  }
+}
