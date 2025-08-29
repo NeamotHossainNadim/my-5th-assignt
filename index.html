@@ -38,6 +38,155 @@
       </p>
     </header>
 
-    
+     <!-- main section -->
+    <div class="main">
+      <!-- cards container -->
+      <div class="container">
+        
+        <!-- National Emergency Card -->
+        <div class="card">
+          <div class="favorite" onclick="toggleFavorite(this)">♡</div>
+          <div class="card-icon">
+            <img src="../assets/emergency.png" alt="emergency-icon"/>
+          </div>
+          <h2 class="card-title">জাতীয় জরুরি সেবা</h2>
+          <p class="card-subtitle">National Emergency</p>
+          <p class="number">999</p>
+          <span class="badge">সার্বজনীন</span>
+          <div class="actions">
+            <button class="btn btn-copy" onclick="copyNumber('999')"><img src="../assets/copy.png" alt="Copy" width="16" height="16"> Copy</button>
+            <button class="btn btn-call" onclick="callNow('999','জাতীয় জরুরি সেবা')"><img src="../assets/telephone.png" alt="telephone" width="16" height="16"> Call</button>
+          </div>
+        </div>
+
+        <!-- Police Services Card -->
+        <div class="card">
+          <div class="favorite" onclick="toggleFavorite(this)">♡</div>
+          <div class="card-icon">
+            <img src="../assets/police.png" alt="Police-logo">
+          </div>
+          <h2 class="card-title">পুলিশ</h2>
+          <p class="card-subtitle">Police</p>
+          <p class="number">999</p>
+          <span class="badge">পুলিশ</span>
+          <div class="actions">
+            <button class="btn btn-copy" onclick="copyNumber('999')"><img src="../assets/copy.png" alt="Copy" width="16" height="16"> Copy</button>
+            <button class="btn btn-call" onclick="callNow('999','পুলিশ')"><img src="../assets/telephone.png" alt="telephone" width="16" height="16"> Call</button>
+          </div>
+        </div>
+
+        <!-- Fire Service Card -->
+        <div class="card">
+          <div class="favorite" onclick="toggleFavorite(this)">♡</div>
+          <div class="card-icon">
+            <img src="../assets/fire-service.png" alt="Fire-sevice">
+          </div>
+          <h2 class="card-title">ফায়ার সার্ভিস</h2>
+          <p class="card-subtitle">Fire Service</p>
+          <p class="number">999</p>
+          <span class="badge">ফায়ার</span>
+          <div class="actions">
+            <button class="btn btn-copy" onclick="copyNumber('999')"><img src="../assets/copy.png" alt="Copy" width="16" height="16"> Copy</button>
+            <button class="btn btn-call" onclick="callNow('999','ফায়ার সার্ভিস')"><img src="../assets/telephone.png" alt="telephone" width="16" height="16"> Call</button>
+          </div>
+        </div>
+
+        <!-- Ambulance Card -->
+        <div class="card">
+          <div class="favorite" onclick="toggleFavorite(this)">♡</div>
+          <div class="card-icon">
+            <img src="../assets/ambulance.png" alt="Ambulance-sevice">
+          </div>
+          <h2 class="card-title">অ্যাম্বুলেন্স</h2>
+          <p class="card-subtitle">Ambulance</p>
+          <p class="number">1994-999999</p>
+          <span class="badge">স্বাস্থ্য</span>
+          <div class="actions">
+            <button class="btn btn-copy" onclick="copyNumber('1994-999999')"><img src="../assets/copy.png" alt="Copy" width="16" height="16"> Copy</button>
+            <button class="btn btn-call" onclick="callNow('1994-999999','অ্যাম্বুলেন্স')"><img src="../assets/telephone.png" alt="telephone" width="16" height="16"> Call</button>
+          </div>
+        </div>
+
+        <!-- Women & Child Help Card -->
+        <div class="card">
+          <div class="favorite" onclick="toggleFavorite(this)">♡</div>
+          <div class="card-icon">
+           <img src="../assets/logo-dark.png" alt="logo-dark"/>
+          </div>
+          <h2 class="card-title">নারী ও শিশু সহায়তা</h2>
+          <p class="card-subtitle">Women & Child Helpline</p>
+          <p class="number">109</p>
+          <span class="badge">সহায়তা</span>
+          <div class="actions">
+            <button class="btn btn-copy" onclick="copyNumber('109')"><img src="../assets/copy.png" alt="Copy" width="16" height="16"> Copy</button>
+            <button class="btn btn-call" onclick="callNow('109','নারী ও শিশু সহায়তা')"><img src="../assets/telephone.png" alt="telephone" width="16" height="16"> Call</button>
+          </div>
+        </div>
+
+        <!-- Anti Corruption Card -->
+        <div class="card">
+          <div class="favorite" onclick="toggleFavorite(this)">♡</div>
+          <div class="card-icon">
+            <img src="../assets/logo-dark.png" alt="logo-dark"/>
+          </div>
+          <h2 class="card-title">দুদক</h2>
+          <p class="card-subtitle">Anti-Corruption</p>
+          <p class="number">106</p>
+          <span class="badge">সরকারি</span>
+          <div class="actions">
+            <button class="btn btn-copy" onclick="copyNumber('106')"><img src="../assets/copy.png" alt="Copy" width="16" height="16"> Copy</button>
+            <button class="btn btn-call" onclick="callNow('106','দুর্নীতি')"><img src="../assets/telephone.png" alt="telephone" width="16" height="16"> Call</button>
+          </div>
+        </div>
+
+        <!-- Electricity Card -->
+        <div class="card">
+          <div class="favorite" onclick="toggleFavorite(this)">♡</div>
+          <div class="card-icon">
+             <img src="../assets/logo.png" alt="bd-logo"/>
+          </div>
+          <h2 class="card-title">বিদ্যুৎ বিভ্রাট</h2>
+          <p class="card-subtitle">Electricity Outage</p>
+          <p class="number">16216</p>
+          <span class="badge">বিদ্যুৎ</span>
+          <div class="actions">
+            <button class="btn btn-copy" onclick="copyNumber('16216')"><img src="../assets/copy.png" alt="Copy" width="16" height="16"> Copy</button>
+            <button class="btn btn-call" onclick="callNow('16216','বিদ্যুৎ বিভাগ')"><img src="../assets/telephone.png" alt="telephone" width="16" height="16"> Call</button>
+          </div>
+        </div>
+
+        <!-- Brac Card -->
+        <div class="card">
+          <div class="favorite" onclick="toggleFavorite(this)">♡</div>
+          <div class="card-icon">
+            <img src="../assets/brac.png" alt="Brac-Logo"/>
+          </div>
+          <h2 class="card-title">ব্র্যাক</h2>
+          <p class="card-subtitle">Brac</p>
+          <p class="number">16445</p>
+          <span class="badge">এনজিও</span>
+          <div class="actions">
+            <button class="btn btn-copy" onclick="copyNumber('16445')"><img src="../assets/copy.png" alt="Copy" width="16" height="16"> Copy</button>
+            <button class="btn btn-call" onclick="callNow('16445','ব্র্যাক')"><img src="../assets/telephone.png" alt="telephone" width="16" height="16"> Call</button>
+          </div>
+        </div>
+
+        <!--  Bangladesh Railway Card -->
+        <div class="card">
+          <div class="favorite" onclick="toggleFavorite(this)">♡</div>
+          <div class="card-icon">
+            <img src="../assets/Bangladesh-Railway.png" alt="Bangladesh-Railway-logo"/>
+          </div>
+          <h2 class="card-title">বাংলাদেশ রেলওয়ে</h2>
+          <p class="card-subtitle">Bangladesh Railway</p>
+          <p class="number">163</p>
+          <span class="badge">পরিবহন</span>
+          <div class="actions">
+            <button class="btn btn-copy" onclick="copyNumber('163')"><img src="../assets/copy.png" alt="Copy" width="16" height="16"> Copy</button>
+            <button class="btn btn-call" onclick="callNow('163','বাংলাদেশ রেলওয়ে')"><img src="../assets/telephone.png" alt="telephone" width="16" height="16"> Call</button>
+          </div>
+        </div>
+      </div>
+
     </body>
     </html>
