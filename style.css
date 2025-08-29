@@ -81,3 +81,112 @@ header p {
   font-size: 14px;
   opacity: 0.9;
 }
+
+/* main section */
+.main {
+  display: flex;
+  margin: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.container {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* cards section */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.favorite {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 18px;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.card-icon {
+  background: #e9f5ec;
+  border-radius: 12px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+
+.card-icon img {
+  height: 20px;
+  width: 20px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-subtitle {
+  font-size: 13px;
+  color: #777;
+  margin: 4px 0 12px 0;
+}
+
+.number {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  color: #006838;
+}
+
+.badge {
+  display: inline-block;
+  background: #f0f0f0;
+  color: #333;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 12px;
+  margin-top: 6px;
+}
+
+.actions {
+  display: flex;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.btn {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-copy {
+  background: #f2f2f2;
+}
+
+.btn-call {
+  background: #00b050;
+  color: white;
+}
