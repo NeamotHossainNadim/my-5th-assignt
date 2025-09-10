@@ -1,68 +1,57 @@
-// Copy Number Function
+// Copy number function
 function copyNumber(num) {
   navigator.clipboard.writeText(num);
-  alert(num + " আপনার নম্বর কপি করা হয়েছে!");
-  let c = document.getElementById("copyCount");
-  c.innerText = parseInt(c.innerText) + 1;
+  let copyCount = document.getElementById("copyCount");
+  copyCount.textContent = parseInt(copyCount.textContent) + 1;
+  alert(num + " নম্বর কপি করা হয়েছে ✅");
 }
 
-// Call Now Function
+// Call function
 function callNow(num, name) {
-  let coinEl = document.getElementById("coinCount");
-  let coins = parseInt(coinEl.innerText);
+  let coinElem = document.getElementById("coinCount");
+  let coins = parseInt(coinElem.textContent);
 
-  // কয়েন চেক করা
+  // কয়েন চেক
   if (coins < 20) {
-    alert("আপনার কাছে পর্যাপ্ত পরিমাণ কয়েন নেই! (কমপক্ষে ২০ কয়েন প্রয়োজন)");
+    alert("⚠ পর্যাপ্ত কয়েন নেই! কল করা সম্ভব নয়।");
     return;
   }
 
-  // ২০ কয়েন কাটা
-  coins -= 20;
-  coinEl.innerText = coins;
+  // কয়েন কমানো
+  coinElem.textContent = coins - 20;
 
-  // Alert message দেখানো
-  alert(name + " (" + num + ") আপনার নম্বরে কল হচ্ছে...");
+  // Alert দেখানো
+  alert(`${name} (${num}) এ কল হচ্ছে...`);
 
-  // Call initiate (mobile হলে কাজ করবে, desktop browser এ শুধু চেষ্টা করবে)
-  window.location.href = "tel:" + num;
-
-  // Call history তে যোগ করা
+  // Call History তে যোগ করা
   addHistory(num, name);
 }
 
-// Add Call History Function
-  function addHistory(name) {
-  const historyBox = document.getElementById("history");
+// Add to Call History
+function addHistory(num, name) {
+  const historyBox = document.getElementById("callHistory");
   const div = document.createElement("div");
   div.className = "history-item";
-
-  // তারিখ + সময় format
-  let now = new Date();
-  let dateTime =
-    now.toLocaleDateString("bn-BD") + " " + now.toLocaleTimeString("bn-BD");
-
   div.innerHTML = `
-    <strong>${num, name}</strong><br>
-    ${num}<br>
-    <small>${dateTime}</small>
+    <strong>${name}</strong><br>
+    ${num}
   `;
-  historyBox.prepend(div);
+  historyBox.prepend(div); // নতুন কল সবসময় উপরে আসবে
 }
 
-// Clear History Function
+// Clear History
 function clearHistory() {
-  document.getElementById("callHistory").innerHTML = "";;
+  document.getElementById("callHistory").innerHTML = "";
 }
 
-// Favorite Toggle Function
+// Favorite toggle
 function toggleFavorite(el) {
   let favCount = document.getElementById("favCount");
-  if (el.innerText === "♡") {
-    el.innerText = "❤️";
-    favCount.innerText = parseInt(favCount.innerText) + 1;
+  if (el.textContent === "♡") {
+    el.textContent = "❤️";
+    favCount.textContent = parseInt(favCount.textContent) + 1;
   } else {
-    el.innerText = "♡";
-    favCount.innerText = parseInt(favCount.innerText) - 1;
+    el.textContent = "♡";
+    favCount.textContent = parseInt(favCount.textContent) - 1;
   }
 }
